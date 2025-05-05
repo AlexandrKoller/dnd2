@@ -9,7 +9,6 @@ export default class CardMover {
         this.downCard = this.downCard.bind(this)
     }
     moveCard(event) {
-        event.preventDefault()
         if (event.target != event.currentTarget) return
         this.card.style.cursor = 'grabbing'
         const nxtSibling = this.card.nextElementSibling
